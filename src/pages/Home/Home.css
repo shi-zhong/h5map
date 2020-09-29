@@ -1,0 +1,53 @@
+.start {
+  width: 236px;
+  height: 64px;
+  border: 2px solid gray;
+  margin: 100px auto;
+  position: absolute;
+  z-index: 2;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(./but.png);
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  opacity: 1;
+}
+
+.home-body {
+  position: relative;
+}
+
+.home-back {
+  position: absolute;
+  background-image: url(../../assets/SouthLake.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.home-title {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.dot-con {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.dot {
+  background: #009da2;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}

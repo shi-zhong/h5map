@@ -1,0 +1,62 @@
+.switch-con {
+  position: relative;
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  margin-bottom: -70px;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-style: preserve-3d;
+}
+
+.switch-con::before, .switch-con::after {
+  display: block;
+  position: absolute;
+  line-height: 30px;
+  font-size: 35px;
+  color: rgb(170, 82, 170);
+  font-weight: bold;
+}
+
+.switch-con::before {
+  content: "》";
+  top: 20%;
+  text-align: right;
+  left: -30px;
+}
+
+.switch-con::after {
+  text-align: left;
+  content: "《";
+  top: 24%;
+  right: -30px;
+}
+
+.place-con {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border: 8px solid rgb(170, 82, 170);
+  box-sizing: border-box;
+  line-height: 36px;
+  border-radius: 60px;
+  background-color: white;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.switch-font {
+  transform: rotateY(0deg);
+}
+
+.switch-back {
+  transform: rotateY(180deg);
+}

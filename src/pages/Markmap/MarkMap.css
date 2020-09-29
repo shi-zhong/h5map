@@ -1,0 +1,48 @@
+.map-switch {
+  position: relative;
+  z-index: 2;
+  transform-style: preserve-3d;
+}
+
+.ccnu {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-image: url(../../assets/ccnu.jpeg);
+  background-position: center;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.map-switch-con {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: transform 0.5s;
+}
+
+.map-font {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.map-back {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+.commit-btn {
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  width: 236px;
+  height: 64px;
+  background-image: url(./commit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s;
+}

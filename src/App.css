@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.hide {
+  width: 0;
+  height: 0;
+  display: none;
+}

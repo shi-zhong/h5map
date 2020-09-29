@@ -1,0 +1,29 @@
+.honor-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.score {
+  padding: 0 6px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.text-img {
+  display: inline;
+  vertical-align: top;
+}
+
+.score-con {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.position-con {
+  position: relative;
+}

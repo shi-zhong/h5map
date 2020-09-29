@@ -1,0 +1,39 @@
+.outline {
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.scroll-con {
+  overflow: scroll;
+  scrollbar-width: 0;
+}
+
+.map-con {
+  transition: 1ms;
+  position: relative;
+  overflow: show;
+}
+
+.img-con {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
+.scroll-con::-webkit-scrollbar {
+  display: none;
+}
+
+.siteIndex {
+  position: relative;
+  user-select: none;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mapimg {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
