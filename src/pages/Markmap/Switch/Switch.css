@@ -1,7 +1,7 @@
 .switch-con {
   position: relative;
   margin-top: 20px;
-  width: 100px;
+  width: 140px;
   height: 50px;
   margin-bottom: -70px;
   z-index: 3;
@@ -35,7 +35,7 @@
 
 .place-con {
   position: absolute;
-  width: 100px;
+  width: 140px;
   height: 50px;
   border: 8px solid rgb(170, 82, 170);
   box-sizing: border-box;

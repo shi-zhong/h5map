@@ -3,7 +3,7 @@ import React from 'react'
 
 const Area = (props) => {
 
-  const { name, shape, coords, index, width, height, check, part } = props
+  const { name, shape, coords, index, width, height, check, part, prefix } = props
 
   const calcSite = () => {
     let site = ""
@@ -20,7 +20,7 @@ const Area = (props) => {
 
   const handleClickLocal = (e) => {
     props.onclick(part, check)
-    e.stopPropagation() 
+    e.stopPropagation()
   }
 
   return (
@@ -28,7 +28,7 @@ const Area = (props) => {
       onClick={handleClickLocal.bind(this)}
       shape={shape}
       coords={calcSite()}
-      alt={name + index}
+      alt={prefix + name + index}
     />
   )
 }

@@ -11,8 +11,8 @@ class App extends Component {
 
   state = {
     // router: "/markmap",
-    // router: "/home",
-    router: "/honor",
+    router: "/home",
+    // router: "/honor",
     device: {
       height: window.innerHeight,
       width: window.innerWidth

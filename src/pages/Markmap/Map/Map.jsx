@@ -15,7 +15,7 @@ export default class Map extends Component {
       preDis: 0,
     },
     mapContrl: {
-      zoom: 160,
+      zoom: this.props.part ? 160 : 300,
     }
   }
 
@@ -32,7 +32,7 @@ export default class Map extends Component {
     const { device: mobileSet, baseOfTop, part } = this.props
     const { mapContrl } = this.state
     const mb_WH = mobileSet.width / mobileSet.height
-    const calc_WH = !part ? 7508 / 9670 : 3625 / 5334
+    const calc_WH = !part ? 7442 / 9425 : 3625 / 5334
     if (mb_WH < calc_WH) {
       return {
         width: (mobileSet.height - baseOfTop) * calc_WH * mapContrl.zoom * 0.01,
@@ -74,6 +74,7 @@ export default class Map extends Component {
 
   handleTouchMove = (e) => {
     const { touch, touchEvent, mapContrl } = this.state
+    const { part } = this.props
     let preTouchList = []
     let preDis = 0
 
@@ -95,8 +96,13 @@ export default class Map extends Component {
     if (e.touches.length !== 1 && touchEvent.finger === e.touches.length) {
       // 200px => 100%   缩放 调整中心位置不变
       mapContrl.zoom = mapContrl.zoom + Math.round((preDis - touchEvent.preDis) * 100) / 200
-      mapContrl.zoom = (mapContrl.zoom > 100) ? mapContrl.zoom : 100
-      mapContrl.zoom = (mapContrl.zoom < 200) ? mapContrl.zoom : 200
+      if (part) {
+        mapContrl.zoom = (mapContrl.zoom > 100) ? mapContrl.zoom : 100
+        mapContrl.zoom = (mapContrl.zoom < 200) ? mapContrl.zoom : 200
+      } else {
+        mapContrl.zoom = (mapContrl.zoom > 200) ? mapContrl.zoom : 200
+        mapContrl.zoom = (mapContrl.zoom < 400) ? mapContrl.zoom : 400
+      }
     }
 
     this.setState({
@@ -145,8 +151,13 @@ export default class Map extends Component {
     return Math.floor(dis)
   }
 
+  click = (e) => {
+    const img = this.calcImg()
+    console.log(Math.round(e.pageX / img.width * 100) / 100, Math.round(e.pageY / img.height * 100) / 100)
+  }
+
   render() {
-    const { places, check, device, className, baseOfTop } = this.props
+    const { part, places, check, device, className, baseOfTop, prefix } = this.props
     const { mapContrl } = this.state
     const ImgInfo = this.calcImg()
     return (
@@ -175,7 +186,7 @@ export default class Map extends Component {
             {/* 图片 */}
             <div className="img-con">
               {!this.props.part
-                ? <img className="mapimg" src={HomePart} alt="homePart" width={ImgInfo.width} useMap="#ccnumap" />
+                ? <img onClick={this.click} className="mapimg" src={HomePart} alt="homePart" width={ImgInfo.width} useMap="#ccnumap" />
                 : <img className="mapimg" src={SouthLake} alt="southlake" width={ImgInfo.width} useMap="#southlake" />
               }
               {/* 热区 */}
@@ -192,6 +203,7 @@ export default class Map extends Component {
                       width={ImgInfo.width}
                       check={index}
                       part={this.props.part}
+                      prefix={prefix}
                       onclick={this.props.checkSite}
                     />
                   })
@@ -205,7 +217,7 @@ export default class Map extends Component {
                   if (check[index]) {
                     return <Site
                       key={place.name + place.index}
-                      coords={place.coords || [0, 0, 0, 0]}
+                      part={part}
                       height={ImgInfo.height}
                       width={ImgInfo.width}
                       zoom={mapContrl.zoom}

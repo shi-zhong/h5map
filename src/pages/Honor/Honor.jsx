@@ -22,8 +22,8 @@ export default class Honor extends Component {
     const { param } = this.props
     console.log(param)
     if (param <= 18) return 1;
-    if (param <= 32) return 2;
-    if (param <= 69) return 3;
+    if (param <= 35) return 2;
+    if (param <= 72) return 3;
     return 4;
   }
 

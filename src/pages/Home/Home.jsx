@@ -4,8 +4,8 @@ import './Home.css'
 
 export default class Home extends Component {
 
-  onRouter = (router) => {
-    this.props.router(router)
+  onRouter = () => {
+    this.props.router('/markmap')
   }
 
   render() {
@@ -21,7 +21,7 @@ export default class Home extends Component {
       >
         <div className="home-back" style={device}></div>
         <img className="home-title" width={device.width - 20} src={Title} alt="welcomeLogo" />
-        <div className="start" onClick={this.onRouter.bind(this, '/markmap')}></div>
+        <div className="start" onClick={this.onRouter.bind(this)}></div>
         <div className="dot-con">
           <div className="dot"></div>
           <div className="dot"></div>
