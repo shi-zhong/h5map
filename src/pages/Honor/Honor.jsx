@@ -7,6 +7,7 @@ import Lvl3 from './lvl3.png'
 import Lvl4 from './lvl4.png'
 
 import TextLine from './TextLine/TextLine'
+import WeChat from './wechat.jpg'
 
 export default class Honor extends Component {
 
@@ -22,8 +23,8 @@ export default class Honor extends Component {
     const { param } = this.props
     console.log(param)
     if (param <= 18) return 1;
-    if (param <= 35) return 2;
-    if (param <= 72) return 3;
+    if (param <= 45) return 2;
+    if (param <= 86) return 3;
     return 4;
   }
 
@@ -39,6 +40,7 @@ export default class Honor extends Component {
         {lvl === 3 && <img className="honor-image" width={device.width} height={device.height} src={Lvl3} alt="lvl1" />}
         {lvl === 4 && <img className="honor-image" width={device.width} height={device.height} src={Lvl4} alt="lvl1" />}
         <TextLine count={param} device={device} />
+        <img className="wechat" src={WeChat} alt="wechat"/>
       </div>
     )
   }

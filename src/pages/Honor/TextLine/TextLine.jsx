@@ -23,9 +23,9 @@ const TextLine = (props) => {
   return (
     <div style={positionCon} className="position-con">
       <div className="score-con">
-        <img className="text-img" width={120 * device.width / 540} src={Before} alt="before" />
+        <img className="text-img" width={141 * device.width / 540} src={Before} alt="before" />
         <span style={style} className="score">{count}</span>
-        <img className="text-img" width={78 * device.width / 540} src={After} alt="after" />
+        <img className="text-img" width={71 * device.width / 540} src={After} alt="after" />
       </div>
     </div>
   )

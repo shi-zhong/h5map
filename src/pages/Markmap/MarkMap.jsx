@@ -169,8 +169,8 @@ export default class MarkMap extends Component {
       places: [{
         name: "teachDoc",
         index: 1,
-        X: 0.749,
-        Y: 0.658,
+        X: 0.739,
+        Y: 0.654,
         shape: "rect",
         coords: [0.72, 0.62, 0.83, 0.66]
       }, {
@@ -183,8 +183,8 @@ export default class MarkMap extends Component {
       }, {
         name: "teachDoc",
         index: 3,
-        X: 0.78,
-        Y: 0.707,
+        X: 0.791,
+        Y: 0.706,
         shape: "rect",
         coords: [0.70, 0.695, 0.84, 0.72]
       }, {
@@ -194,41 +194,56 @@ export default class MarkMap extends Component {
         Y: 0.767,
         shape: "rect",
         coords: [0.785, 0.725, 0.845, 0.795]
+      }, {
+        name: "teachDoc",
+        index: 5,
+        shape: "rect",
+        X: 0.897,
+        Y: 0.77,
+        coords: [0.866, 0.73, 0.918, 0.796]
       },
       // ----------------------------------------
       {
         name: "stuDocYB",
         index: 1,
-        X: 0.528, Y: 0.892,
+        X: 0.525, Y: 0.892,
         shape: "rect",
         coords: [0.48, 0.885, 0.58, 0.90]
       }, {
         name: "stuDocYB",
         index: 2,
-        X: 0.53, Y: 0.867,
+        X: 0.523, Y: 0.872,
         shape: "rect",
         coords: [0.48, 0.865, 0.58, 0.878]
       }, {
         name: "stuDocYB",
         index: 3,
-        X: 0.529, Y: 0.852,
+        X: 0.526, Y: 0.852,
         shape: "rect",
         coords: [0.48, 0.845, 0.58, 0.858]
       }, {
         name: "stuDocYB",
         index: 4,
-        X: 0.417, Y: 0.86,
+        X: 0.409, Y: 0.864,
         shape: "rect",
         coords: [0.36, 0.855, 0.46, 0.87]
       }, {
         name: "stuDocYB",
         index: 5,
-        X: 0.414, Y: 0.829,
+        X: 0.411, Y: 0.833,
         shape: "rect",
         coords: [0.36, 0.825, 0.46, 0.842]
       },
       // east
+
       {
+        name: "stuDocET",
+        index: 1,
+        shape: "rect",
+        X: 0.563,
+        Y: 0.625,
+        coords: [0.538, 0.619, 0.588, 0.633]
+      }, {
         name: "stuDocET",
         index: 2,
         X: 0.642, Y: 0.625,
@@ -237,71 +252,102 @@ export default class MarkMap extends Component {
       }, {
         name: "stuDocET",
         index: 3,
-        X: 0.564, Y: 0.652,
+        X: 0.561, Y: 0.652,
         shape: "rect",
         coords: [0.535, 0.645, 0.59, 0.66]
       }, {
         name: "stuDocET",
         index: 4,
-        X: 0.64, Y: 0.654,
+        X: 0.633, Y: 0.654,
         shape: "rect",
         coords: [0.605, 0.64, 0.67, 0.66]
       }, {
         name: "stuDocET",
         index: 5,
-        X: 0.564, Y: 0.68,
+        X: 0.561, Y: 0.68,
         shape: "rect",
         coords: [0.535, 0.675, 0.59, 0.69]
       }, {
         name: "stuDocET",
         index: 6,
-        X: 0.638, Y: 0.679,
+        X: 0.635, Y: 0.679,
         shape: "rect",
         coords: [0.61, 0.67, 0.675, 0.685]
       }, {
         name: "stuDocET",
         index: 7,
-        X: 0.562, Y: 0.707,
+        X: 0.558, Y: 0.707,
         shape: "rect",
         coords: [0.535, 0.70, 0.59, 0.715]
       }, {
         name: "stuDocET",
         index: 8,
-        X: 0.637, Y: 0.709,
+        X: 0.633, Y: 0.709,
         shape: "rect",
         coords: [0.605, 0.70, 0.665, 0.715]
       }, {
         name: "stuDocET",
         index: 9,
-        X: 0.563, Y: 0.724,
+        X: 0.558, Y: 0.724,
         shape: "rect",
         coords: [0.535, 0.72, 0.59, 0.735]
+      }, {
+        name: "stuDocET",
+        index: 10,
+        shape: "rect",
+        X: 0.499,
+        Y: 0.725,
+        coords: [0.475, 0.72, 0.52, 0.73]
       }, {
         name: "stuDocET",
         index: 11,
         X: 0.499, Y: 0.706,
         shape: "rect",
-        coords: [0.47, 0.700, 0.52, 0.73]
+        coords: [0.47, 0.700, 0.52, 0.712]
       }, {
         name: "stuDocET",
         index: 12,
-        X: 0.481, Y: 0.826,
         shape: "rect",
-        coords: [0.475, 0.825, 0.533, 0.834]
+        X: 0.494,
+        Y: 0.828,
+        coords: [0.483, 0.823, 0.537, 0.833]
+      }, {
+        name: "stuDocET",
+        index: 13,
+        shape: "rect",
+        X: 0.67,
+        Y: 0.809,
+        coords: [0.653, 0.803, 0.694, 0.813]
       }, {
         name: "stuDocET",
         index: 14,
-        X: 0.668, Y: 0.816,
         shape: "rect",
-        coords: [0.635, 0.81, 0.695, 0.82]
+        X: 0.662,
+        Y: 0.825,
+        coords: [0.64, 0.821, 0.687, 0.829]
       },
       // west
+      
       {
         name: "stuDocWT",
         index: 1,
         X: 0.298, Y: 0.444,
         shape: "rect",
         coords: [0.26, 0.435, 0.323, 0.451]
+      }, {
+        name: "stuDocWT",
+        index: 2,
+        X: 0.381,
+        Y: 0.446,
+        shape: "rect",
+        coords: [0.352, 0.439, 0.403, 0.454]
+      }, {
+        name: "stuDocWT",
+        index: 3,
+        X: 0.3,
+        Y: 0.468,
+        shape: "rect",
+        coords: [0.269, 0.462, 0.322, 0.476]
       }, {
         name: "stuDocWT",
         index: 4,
@@ -323,65 +369,76 @@ export default class MarkMap extends Component {
       }, {
         name: "stuDocWT",
         index: 7,
-        X: 0.185, Y: 0.533,
         shape: "rect",
-        coords: [0.155, 0.515, 0.223, 0.54]
+        X: 0.188,
+        Y: 0.544,
+        coords: [0.16, 0.534, 0.213, 0.548]
       }, {
         name: "stuDocWT",
         index: 8,
-        X: 0.192, Y: 0.564,
+
         shape: "rect",
-        coords: [0.16, 0.55, 0.223, 0.58]
+        X: 0.19,
+        Y: 0.565,
+        coords: [0.164, 0.557, 0.216, 0.57]
       },
       // canteen
+      
       {
         name: "canteen",
         index: 1,
-        X: 0.181, Y: 0.441,
+        X: 0.167, Y: 0.446,
         shape: "rect",
         coords: [0.12, 0.42, 0.21, 0.48]
       }, {
         name: "canteen",
         index: 2,
-        X: 0.483, Y: 0.735,
+        X: 0.493, Y: 0.749,
         shape: "rect",
         coords: [0.45, 0.735, 0.54, 0.77]
       }, {
         name: "canteen",
         index: 3,
-        X: 0.64, Y: 0.776,
+        X: 0.641, Y: 0.783,
         shape: "rect",
-        coords: [0.59, 0.775, 0.695, 0.785]
+        coords: [0.59, 0.775, 0.692, 0.789]
       }, {
         name: "canteen",
         index: 4,
-        X: 0.612, Y: 0.92,
+        X: 0.611, Y: 0.935,
         shape: "rect",
         coords: [0.59, 0.915, 0.64, 0.96]
       },
-      // playground
       {
         name: "playground",
-        index: 2,
-        X: 0.307, Y: 0.625,
+        index: 1,
+        X: 0.287,
+        Y: 0.637,
         shape: "rect",
-        coords: [0.25, 0.60, 0.38, 0.70]
+        coords: [0.255, 0.616, 0.314, 0.652]
+      }, {
+        name: "playground",
+        index: 2,
+        X: 0.354,
+        Y: 0.646,
+        shape: "rect",
+        coords: [0.323, 0.597, 0.379, 0.692]
       }, {
         name: "playground",
         index: 3,
-        X: 0.416, Y: 0.619,
+        X: 0.414, Y: 0.626,
         shape: "rect",
         coords: [0.39, 0.60, 0.45, 0.65]
       }, {
         name: "playground",
         index: 4,
-        X: 0.679, Y: 0.852,
+        X: 0.686, Y: 0.876,
         shape: "rect",
         coords: [0.61, 0.85, 0.76, 0.90]
       }, {
         name: "playground",
         index: 5,
-        X: 0.699, Y: 0.654,
+        X: 0.701, Y: 0.653,
         shape: "rect",
         coords: [0.69, 0.65, 0.71, 0.69]
       }, {
@@ -389,20 +446,21 @@ export default class MarkMap extends Component {
         index: 6,
         X: 0.482, Y: 0.675,
         shape: "rect",
-        coords: [0.4, 0.66, 0.53, 0.69]
+        coords: [0.449, 0.665, 0.53, 0.69]
       }, {
         name: "playground",
         index: 7,
-        X: 0.29, Y: 0.525,
+        X: 0.296, Y: 0.535,
         shape: "rect",
-        coords: [0.26, 0.52, 0.34, 0.59]
+        coords: [0.26, 0.52, 0.335, 0.573]
       }, {
         name: "playground",
         index: 8,
-        X: 0.745, Y: 0.776,
+        X: 0.74, Y: 0.775,
         shape: "rect",
         coords: [0.705, 0.73, 0.77, 0.79]
       },
+      
       // college
       {
         name: "college",
@@ -458,14 +516,14 @@ export default class MarkMap extends Component {
       }, {
         name: "college",
         index: 10,
-        X: 0.823, Y: 0.514,
+        X: 0.816, Y: 0.533,
         shape: "rect",
         coords: [0.779, 0.496, 0.843, 0.548]
       }, {
         name: "college",
         index: 11,
         X: 0.817,
-        Y: 0.475,
+        Y: 0.47,
         shape: "rect",
         coords: [0.769, 0.448, 0.852, 0.477]
       }, {
@@ -486,11 +544,12 @@ export default class MarkMap extends Component {
         name: "college",
         index: 17,
         X: 0.487,
-        Y: 0.62,
+        Y: 0.63,
         shape: "rect",
         coords: [0.461, 0.606, 0.521, 0.643]
       },
       // other
+      
       {
         name: "stuActCenter",
         index: 1,
@@ -519,13 +578,6 @@ export default class MarkMap extends Component {
         shape: "rect",
         coords: [0.739, 0.312, 0.806, 0.335]
       }, {
-        name: "hospital",
-        index: 2,
-        X: 0.69,
-        Y: 0.31,
-        shape: "rect",
-        coords: [0.662, 0.305, 0.722, 0.321]
-      }, {
         name: "market",
         index: 1,
         X: 0.622,
@@ -542,14 +594,14 @@ export default class MarkMap extends Component {
       }, {
         name: "car",
         index: 3,
-        X: 0.571,
+        X: 0.56,
         Y: 0.811,
         shape: "rect",
         coords: [0.56, 0.81, 0.58, 0.815]
       }, {
         name: "market",
         index: 4,
-        X: 0.555,
+        X: 0.56,
         Y: 0.827,
         shape: "rect",
         coords: [0.55, 0.82, 0.57, 0.84]
@@ -561,26 +613,12 @@ export default class MarkMap extends Component {
         shape: "rect",
         coords: [0.855, 0.655, 0.91, 0.70]
       }, {
-        name: "school",
-        index: 6,
-        X: 0.472,
-        Y: 0.182,
-        shape: "rect",
-        coords: [0.45, 0.07, 0.6, 0.24]
-      }, {
         name: "schoolby",
         index: 1,
         X: 0.291,
         Y: 0.195,
         shape: "rect",
         coords: [0.284, 0.168, 0.432, 0.236]
-      }, {
-        name: "Mr.Chu",
-        index: 1,
-        X: 0.261,
-        Y: 0.279,
-        shape: "rect",
-        coords: [0.234, 0.252, 0.286, 0.284]
       }, {
         name: "tian",
         index: 1,
@@ -628,8 +666,8 @@ export default class MarkMap extends Component {
       }, {
         name: "sqare",
         index: 2,
-        X: 0.71,
-        Y: 0.452,
+        X: 0.682,
+        Y: 0.465,
         shape: "rect",
         coords: [0.628, 0.434, 0.733, 0.481]
       },
@@ -656,10 +694,141 @@ export default class MarkMap extends Component {
         shape: "rect",
         coords: [0.55, 0.487, 0.612, 0.503]
       },
+      // school
+      {
+        name: "teaDocNor",
+        index: 1,
+        shape: "rect",
+        X: 0.537,
+        Y: 0.096,
+        coords: [0.466, 0.064, 0.606, 0.127]
+      }, {
+        name: "school",
+        index: 2,
+        X: 0.472,
+        Y: 0.182,
+        shape: "rect",
+        coords: [0.457, 0.131, 0.616, 0.187]
+      }, {
+        name: "teaDocNor",
+        index: 2,
+        shape: "rect",
+        X: 0.487,
+        Y: 0.216,
+        coords: [0.462, 0.197, 0.521, 0.236]
+      }, {
+        name: "school",
+        index: 3,
+        shape: "rect",
+        X: 0.55,
+        Y: 0.209,
+        coords: [0.535, 0.196, 0.591, 0.237]
+      },
+        
+      // teachDocET
+      {
+        name: "teachDocET",
+        shape: "rect",
+        index: 1,
+        X: 0.077,
+        Y: 0.363,
+        coords: [0.015, 0.245, 0.119, 0.403]
+      }, {
+        name: "teachDocET",
+        shape: "rect",
+        index: 2, X: 0.06,
+        Y: 0.49,
+        coords: [0.026, 0.419, 0.085, 0.515]
+      }, {
+        name: "teachDocET",
+        shape: "rect",
+        index: 3,
+        X: 0.102,
+        Y: 0.555,
+        coords: [0.066, 0.529, 0.129, 0.606]
+      }, {
+        name: "teachDocET",
+        shape: "rect",
+        index: 4, X: 0.184,
+        Y: 0.512,
+        coords: [0.161, 0.495, 0.21, 0.526]
+      },
+      // left-top
+     
+      {
+        name: "LT",
+        shape: "rect",
+        index: 3,
+        X: 0.041,
+        Y: 0.169,
+        coords: [0.011, 0.163, 0.062, 0.177]
+      }, {
+        name: "LT",
+        shape: "rect",
+        index: 4,
+        X: 0.136,
+        Y: 0.126,
+        coords: [0.107, 0.118, 0.16, 0.131]
+      }, {
+        name: "LT",
+        shape: "rect",
+        index: 5,
+        X: 0.031,
+        Y: 0.207,
+        coords: [0.005, 0.199, 0.055, 0.211]
+      }, {
+        name: "biggest",
+        index: 1, shape: "rect",
+        X: 0.14,
+        Y: 0.159,
+        coords: [0.088, 0.145, 0.187, 0.175]
+      }, {
+        name: "red",
+        shape: "rect", index: 1,
+        X: 0.212,
+        Y: 0.185,
+        coords: [0.197, 0.179, 0.229, 0.187]
+      }, {
+        name: "tri",
+        shape: "rect",
+        index: 1,
+        X: 0.125,
+        Y: 0.193,
+        coords: [0.089, 0.182, 0.167, 0.198]
+      }, {
+        name: "tri",
+        shape: "rect",
+        index: 2,
+        X: 0.09,
+        Y: 0.218,
+        coords: [0.063, 0.211, 0.112, 0.224]
+      }, {
+        name: "tri",
+        shape: "rect",
+        index: 3,
+        X: 0.147,
+        Y: 0.215,
+        coords: [0.125, 0.212, 0.175, 0.225]
+      }
       ],
-      check: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      check: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     }
   }
+
+  componentDidMount() {
+    console.log(this.state.homeplace.places.length, this.state.homeplace.check.length)
+    // const a = (q, w, e, r, t, y) => {
+    //   const a = (a) => { return Math.round(a / 7442 * 1000) / 1000 }
+    //   const b = (b) => { return Math.round(b / 9425 * 1000) / 1000 }
+
+    //   return {
+    //     coords: [a(q), b(w), a(e), b(r)],
+    //     X: a(t),
+    //     Y: b(y)
+    //   }
+    // }
+  }
+
 
   changePart = () => {
     const { part } = this.state
@@ -733,7 +902,7 @@ export default class MarkMap extends Component {
             checkSite={this.checkSite.bind(this)}
           />
         </div>
-        {/* commit */}
+        { /* commit */}
         <div
           className="commit-btn"
           onClick={this.commit.bind(this)}

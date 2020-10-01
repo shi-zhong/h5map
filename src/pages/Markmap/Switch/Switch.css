@@ -1,9 +1,9 @@
 .switch-con {
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 140px;
   height: 50px;
-  margin-bottom: -70px;
+  margin-bottom: -80px;
   z-index: 3;
   left: 50%;
   transform: translateX(-50%);
@@ -51,6 +51,16 @@
   user-select: none;
   transition: 0.5s;
   font-size: 20px;
+}
+
+.place-con::before {
+  content: "SWITCH";
+  position: absolute;
+  top: -94%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(170, 82, 170);
+  font-weight: 900;
 }
 
 .switch-font {

@@ -151,11 +151,6 @@ export default class Map extends Component {
     return Math.floor(dis)
   }
 
-  click = (e) => {
-    const img = this.calcImg()
-    console.log(Math.round(e.pageX / img.width * 100) / 100, Math.round(e.pageY / img.height * 100) / 100)
-  }
-
   render() {
     const { part, places, check, device, className, baseOfTop, prefix } = this.props
     const { mapContrl } = this.state
@@ -186,7 +181,7 @@ export default class Map extends Component {
             {/* 图片 */}
             <div className="img-con">
               {!this.props.part
-                ? <img onClick={this.click} className="mapimg" src={HomePart} alt="homePart" width={ImgInfo.width} useMap="#ccnumap" />
+                ? <img className="mapimg" src={HomePart} alt="homePart" width={ImgInfo.width} useMap="#ccnumap" />
                 : <img className="mapimg" src={SouthLake} alt="southlake" width={ImgInfo.width} useMap="#southlake" />
               }
               {/* 热区 */}
@@ -218,6 +213,7 @@ export default class Map extends Component {
                     return <Site
                       key={place.name + place.index}
                       part={part}
+                      coords={place.coords}
                       height={ImgInfo.height}
                       width={ImgInfo.width}
                       zoom={mapContrl.zoom}

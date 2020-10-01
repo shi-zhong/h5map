@@ -30,7 +30,7 @@
 .home-title {
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 20%;
   transform: translateX(-50%);
   opacity: 1;
 }

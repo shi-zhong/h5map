@@ -14,14 +14,27 @@ const Site = (props) => {
     }
   }
 
+  // const style = () => {
+  //   const { coords } = props
+  //   return {
+  //     left: coords[0] * width,
+  //     top: coords[1] * height,
+  //     width: (coords[2] - coords[0]) * width,
+  //     height: (coords[3] - coords[1]) * height
+  //   }
+  // }
+
   return (
-      <img
-        className="sitelogo"
-        style={{ left: X * width, top: Y * height }}
-        src={Logo}
-        alt="site"
-        width={calcWidth()}
-      />
+    // <div>
+    // <div className="site" style={style()} >   </div>
+    <img
+      className="sitelogo"
+      style={{ left: X * width, top: Y * height }}
+      src={Logo}
+      alt="site"
+      width={calcWidth()}
+    />
+    //  </div>
   )
 }
 
